@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorseTexting.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />            
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />            
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label  Text="Upper Message: "
+            x:Name="lbl4_UpperTextScreen"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+                FontSize="17"
+                FontAttributes="Bold"
+                TextColor="Black"
+            BackgroundColor="WhiteSmoke"
+                />
+
+        <Label 
+            x:Name="lbl4_UpperMorse"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+             FontSize="30"
+                FontAttributes="Bold"
+            TextColor="Black"
+            BackgroundColor="WhiteSmoke"
+                />
+
+        <Button Text=" . "
+            x:Name="btn1_UpperDot"
+                Clicked="Btn_UpperDotClick"
+            Grid.Row="2"
+            Grid.Column="0"
+            FontSize="50"
+            BackgroundColor="LightGray"
+                />
+
+        <Button Text=" - "
+            x:Name="btn2_UpperDash"
+                Clicked="Btn_UpperDashClick"
+            Grid.Row="2"
+            Grid.Column="1"
+            FontSize="50"
+            BackgroundColor="LightGray"
+                />
+
+        <Button Text=" Space Bar "
+            x:Name="btn3_UpperSpaceBar"
+                Clicked="Btn_UpperSpaceBarClick"
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Gray"
+                />
+       
+        
+
+        <Label Text=" MORSE DECODER (2 Screen) "
+            x:Name="lbl5_Title"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            TextColor="White"
+            HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+            FontSize="26"
+               FontFamily="Arial"
+            BackgroundColor="DodgerBlue"
+               
+                />
+    
+             
+        <Label Text="Lower Message: "
+            x:Name="lbl6_LowerTextScreen"
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+               FontSize="17"
+                FontAttributes="Bold"
+                TextColor="Black"
+            BackgroundColor="WhiteSmoke"
+                />
+
+        <Label 
+            x:Name="lbl6_LowerMorse"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+              FontSize="30"
+                FontAttributes="Bold"
+            TextColor="Black"
+            BackgroundColor="WhiteSmoke"
+                />
+
+        <Button Text=" . "
+            x:Name="btn8_LowerDot"
+                    Clicked="Btn_LowerDotClick"
+            Grid.Row="7"
+            Grid.Column="0"
+            FontSize="50"
+            BackgroundColor="LightGray"
+                />
+
+        <Button Text=" - "
+            x:Name="btn9_LowerDash"
+                    Clicked="Btn_LowerDashClick"
+            Grid.Row="7"
+            Grid.Column="1"
+            FontSize="50"
+            BackgroundColor="LightGray"
+                />
+
+        <Button Text=" Space Bar "
+            x:Name="btn7_LowerSpaceBar"
+                    Clicked="Btn_LowerSpaceBarClick"
+            Grid.Row="8"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Gray"
+                />
+
+    </Grid>
+</ContentPage>
